@@ -13,6 +13,7 @@ import Subscription from './pages/Subscription.jsx'
 import About from './pages/About.jsx'
 import History from './pages/History.jsx'
 const router = createBrowserRouter([
+ 
   {
     path: '/',
     element: <App />,
@@ -54,7 +55,13 @@ const router = createBrowserRouter([
     element:<History />
   }
 
-]);
+]
+,
+  {
+    basename: "/DanceWebsite",
+  },
+
+);
 
 
 createRoot(document.getElementById('root')).render(
